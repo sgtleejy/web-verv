@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERV - Move Beyond AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Main Container - 1800px width, flex column, 40px gap -->
+  <div class="main-container">
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="assets/LOGO.png" alt="VERV" class="logo-img">
+        </div>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Features <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#" class="nav-link">Use cases <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#" class="nav-link">Pricing</a>
+          <a href="#" class="nav-link">Enterprise</a>
+        </div>
+        <div class="nav-cta">
+          <a href="https://verv.fm/signup" class="btn btn-primary btn-medium">Start free trial</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-gallery">
+        <div class="hero-card hero-card-small">
+          <video
+            src="assets/verv-category-afro-futurist-2025-12-02-21-55-57.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <span class="hero-card-label">AFRO FUTURIST</span>
+        </div>
+        <div class="hero-card hero-card-small">
+          <video
+            src="assets/verv-template-Man in suit cycling on city street at night-2025-12-02-21-55-47.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <span class="hero-card-label">CINEMATIC NOIR</span>
+        </div>
+        <div class="hero-card hero-card-large">
+          <video
+            src="assets/verv-category-indie-sleaze-2025-12-03-18-59-03.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <span class="hero-card-label">INDIE SLEAZE</span>
+        </div>
+        <div class="hero-card hero-card-small">
+          <video
+            src="assets/verv-category-luxe-glam-2025-12-02-21-54-41.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <span class="hero-card-label">LUXE GLAM</span>
+        </div>
+        <div class="hero-card hero-card-small">
+          <video
+            src="assets/verv-category-tokyo-scene-2025-12-02-21-56-04.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <span class="hero-card-label">TOKYO SCENE</span>
+        </div>
+        <div class="hero-headline">
+          <span class="hero-headline-left">Move</span>
+          <span class="hero-headline-right"><em>beyond</em> AI</span>
+        </div>
+      </div>
+      <p class="hero-subtitle">Editorial-grade art direction curated by humans, elevated by AI</p>
+      <a href="https://verv.fm/signup" class="btn btn-primary btn-large">
+        Start free trial
+        <svg class="btn-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+      <div class="testimonial-carousel">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Finally. VERV is the first AI tool that actually gets modern aesthetics."</p>
+            <div class="testimonial-author">
+              <img src="assets/Melissa P.jpg" alt="Melissa P" class="testimonial-avatar">
+              <div class="testimonial-author-info">
+                <span class="testimonial-name">Melissa P</span>
+                <span class="testimonial-role">Digital Marketer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"VERV's art directions feel like working with a real creative team. Nuanced lighting, color, and composition that look concepted, not just AI generated."</p>
+            <div class="testimonial-author">
+              <img src="assets/jonathan-borba-8rnjApvKu3U-unsplash.jpg" alt="Amelia G" class="testimonial-avatar">
+              <div class="testimonial-author-info">
+                <span class="testimonial-name">Amelia G</span>
+                <span class="testimonial-role">Brand Creative Lead</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"What stands out with VERV is the level of taste. You can tell that each art direction was built by creatives who understand trends, fashion aesthetics, and commercial photography. The results aren't just pretty, they feel culturally relevant."</p>
+            <div class="testimonial-author">
+              <img src="assets/vitor-l-avator.jpg" alt="Vitor L" class="testimonial-avatar">
+              <div class="testimonial-author-info">
+                <span class="testimonial-name">Victor L</span>
+                <span class="testimonial-role">DTC Founder</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Before VERV, our creatives always felt like AI – too shiny, too generic, no taste behind them. With VERV's art direction, everything suddenly looks intentional: the lighting, the styling, even the cultural cues. It feels like we suddenly hired an entire studio team overnight."</p>
+            <div class="testimonial-author">
+              <img src="assets/Jenna R.jpg" alt="Jenna R" class="testimonial-avatar">
+              <div class="testimonial-author-info">
+                <span class="testimonial-name">Jenna R</span>
+                <span class="testimonial-role">Ecommerce Creative Strategist</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"We no longer worry if a new visual will match our brand's look. VERV ensures every asset feels premium and consistent, from model posture to background tone to lighting nuance. It's like having a brand style guardrail built into the creation process."</p>
+            <div class="testimonial-author">
+              <img src="assets/Chloe A.jpg" alt="Chloe A" class="testimonial-avatar">
+              <div class="testimonial-author-info">
+                <span class="testimonial-name">Chloe A</span>
+                <span class="testimonial-role">Brand Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"We tested every AI tool out there. VERV is the only one that produces work I'd confidently show to a client. The results look concepted, not AI-generated. It's exactly what modern brands need to stand out without sacrificing creative standards."</p>
+            <div class="testimonial-author">
+              <img src="assets/Ethan w.jpg" alt="Ethan W" class="testimonial-avatar">
+              <div class="testimonial-author-info">
+                <span class="testimonial-name">Ethan W</span>
+                <span class="testimonial-role">DTC Growth Strategist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button class="testimonial-nav-btn testimonial-prev" aria-label="Previous testimonial">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="testimonial-dots">
+            <span class="testimonial-dot active"></span>
+            <span class="testimonial-dot"></span>
+          </div>
+          <button class="testimonial-nav-btn testimonial-next" aria-label="Next testimonial">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- From AI Generated Section -->
+    <section class="from-ai">
+      <div class="from-ai-content">
+        <div class="from-ai-header">
+          <h2 class="section-title">From "AI-generated"<br>to "Who shot this?"</h2>
+          <p class="section-subtitle">Cinematic framing · Controlled lighting · Cohesive mood</p>
+        </div>
+        <div class="style-cards">
+          <div class="style-card style-card-green">
+            <img src="https://www.figma.com/api/mcp/asset/abe999ba-a0d0-4f95-aff1-ce0ae1ef8942" alt="VERV style">
+            <span class="style-card-label">VERV style</span>
+          </div>
+          <div class="style-card">
+            <img src="https://www.figma.com/api/mcp/asset/abe999ba-a0d0-4f95-aff1-ce0ae1ef8942" alt="VERV style">
+            <span class="style-card-label">VERV style</span>
+          </div>
+          <div class="style-card style-card-blue">
+            <img src="https://www.figma.com/api/mcp/asset/abe999ba-a0d0-4f95-aff1-ce0ae1ef8942" alt="VERV style">
+            <span class="style-card-label">VERV style</span>
+          </div>
+          <div class="style-card style-card-pink">
+            <img src="https://www.figma.com/api/mcp/asset/abe999ba-a0d0-4f95-aff1-ce0ae1ef8942" alt="VERV style">
+            <span class="style-card-label">VERV style</span>
+          </div>
+        </div>
+      </div>
+      <a href="https://verv.fm/signup" class="btn btn-primary btn-large">
+        GO TO VERV
+        <svg class="btn-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- What Makes VERV Different Section -->
+    <section class="difference">
+      <div class="difference-header">
+        <h2 class="section-title">What Makes VERV Different</h2>
+        <p class="section-subtitle">Most AI tools create generic video ads. VERV generates creative direction.</p>
+      </div>
+      <div class="difference-content">
+        <div class="comparison-table">
+          <div class="table-header">
+            <div class="table-cell table-cell-empty"></div>
+            <div class="table-cell table-cell-header">Generic AI</div>
+            <div class="table-cell table-cell-header table-cell-highlight">
+              VERV
+              <div class="verv-gradient"></div>
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell table-cell-label">Art Direction</div>
+            <div class="table-cell">❌ None</div>
+            <div class="table-cell table-cell-verv">✅ Curated aesthetics</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell table-cell-label">Consistency</div>
+            <div class="table-cell">❌ Random</div>
+            <div class="table-cell table-cell-verv">✅ Predictable</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell table-cell-label">Cinematic quality</div>
+            <div class="table-cell">❌ Sometimes</div>
+            <div class="table-cell table-cell-verv">✅ Always</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell table-cell-label">Brand feel</div>
+            <div class="table-cell">❌ Not intentional</div>
+            <div class="table-cell table-cell-verv">✅ Intentional</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell table-cell-label">Storytelling</div>
+            <div class="table-cell">❌ Missing</div>
+            <div class="table-cell table-cell-verv">✅ Built-in</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell table-cell-label">Multi-format cohesion</div>
+            <div class="table-cell">❌ No</div>
+            <div class="table-cell table-cell-verv">✅ Yes</div>
+          </div>
+        </div>
+        <a href="https://verv.fm/signup" class="btn btn-primary btn-large">
+          Start free trial
+          <svg class="btn-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section class="manifesto">
+      <div class="manifesto-container">
+        <img src="assets/dff.png" alt="Background" class="manifesto-bg">
+        <div class="manifesto-card">
+          <p>AI can generate visuals.</p>
+          <p>Art direction makes them cinematic.</p>
+          <p>VERV combines the two, instantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated by Creatives Section -->
+    <section class="curated">
+      <div class="curated-wrapper">
+        <!-- Top row: Hero image + Text -->
+        <div class="curated-top">
+          <div class="curated-main-image">
+            <img src="assets/figma/4e0e86bf958e326f516d1a81635b7083f9cb070b.png" alt="Curated hero">
+          </div>
+          <div class="curated-text">
+            <h2 class="curated-title">Curated by real creatives</h2>
+            <p class="curated-subtitle">Art direction that brings brand vision to life.</p>
+          </div>
+        </div>
+        
+        <!-- Bottom row: All thumbnail cards in horizontal strip -->
+        <div class="curated-thumbnails-row">
+          <div class="curated-thumb curated-thumb-01">
+            <div class="thumb-image-container">
+              <img src="assets/figma/a385bd45fa66c7f1e7b53d426e510066d0f9f0b8.png" alt="Moodboard 01">
+            </div>
+            <span class="thumbnail-label">01</span>
+          </div>
+          <div class="curated-thumb curated-thumb-02">
+            <div class="thumb-image-container">
+              <img src="assets/figma/1ccf20c7b93f0d95800df947c093233c07b31588.png" alt="Moodboard 02">
+            </div>
+            <span class="thumbnail-label">02</span>
+          </div>
+          <div class="curated-thumb curated-thumb-03">
+            <div class="thumb-image-container">
+              <img src="assets/figma/d44351c84e6ced87763d7812d7d42db7df8832a0.png" alt="Moodboard 03">
+            </div>
+            <span class="thumbnail-label">03</span>
+          </div>
+          <div class="curated-thumb curated-thumb-04">
+            <div class="thumb-image-container">
+              <img src="assets/Rectangle 82.png" alt="Moodboard 04">
+            </div>
+            <span class="thumbnail-label">04</span>
+          </div>
+          <div class="curated-thumb curated-thumb-05">
+            <div class="thumb-image-container">
+              <img src="assets/figma/8c17ce355a37e14b2371c9f6cc70fcc3b246d6b9.png" alt="Moodboard 05">
+            </div>
+            <span class="thumbnail-label">05</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Art Directions Section -->
+    <section class="explore">
+      <div class="explore-header">
+        <h2 class="explore-title">Explore ideas<br>from 50+ of Art directions</h2>
+        <a href="https://verv.fm/signup" class="btn btn-primary btn-large">
+          Start Directing
+          <svg class="btn-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="presets-grid">
+        <a href="https://verv.fm/fashion/luxe-glam" class="preset-card">
+          <video
+            src="assets/verv-category-luxe-glam-2025-12-02-21-54-41.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">LUXE GLAM</div>
+        </a>
+        <a href="https://verv.fm/fashion/cinematic-16mm" class="preset-card">
+          <video
+            src="assets/verv-category-cinematic-16mm-2025-12-02-21-55-04.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">CINEMATIC 16MM</div>
+        </a>
+        <a href="https://verv.fm/fashion/cinematic-noir" class="preset-card">
+          <video
+            src="assets/verv-template-Man in suit cycling on city street at night-2025-12-02-21-55-47.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">CINEMATIC NOIR</div>
+        </a>
+        <a href="https://verv.fm/fashion/earthy-natural" class="preset-card">
+          <video
+            src="assets/verv-category-earthy-natural-2025-12-02-21-55-52.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">EARTHY NATURAL</div>
+        </a>
+        <a href="https://verv.fm/fashion/afro-futurist" class="preset-card">
+          <video
+            src="assets/verv-category-afro-futurist-2025-12-02-21-55-57.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">AFRO FUTURIST</div>
+        </a>
+        <a href="https://verv.fm/fashion/tokyo-scene" class="preset-card">
+          <video
+            src="assets/verv-category-tokyo-scene-2025-12-02-21-56-04.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">TOKYO SCENE</div>
+        </a>
+        <a href="https://verv.fm/fashion/athleisure-energy" class="preset-card">
+          <video
+            src="assets/verv-category-athleisure-energy-2025-12-02-21-56-27.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">ATHLEISURE ENERGY</div>
+        </a>
+        <a href="https://verv.fm/general/vintage" class="preset-card">
+          <video
+            src="assets/verv-category-vintage-2025-12-02-21-57-04.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">VINTAGE</div>
+        </a>
+        <a href="https://verv.fm/general/organic-natural" class="preset-card">
+          <video
+            src="assets/verv-category-organic-natural-2025-12-02-21-57-11.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">ORGANIC NATURAL</div>
+        </a>
+        <a href="https://verv.fm/beauty/clinical" class="preset-card">
+          <video
+            src="assets/verv-category-clinical-2025-12-02-21-57-23.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">CLINICAL</div>
+        </a>
+        <a href="https://verv.fm/beauty/stock-beauty" class="preset-card">
+          <video
+            src="assets/verv-category-stock-beauty-2025-12-02-21-57-26.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">STOCK BEAUTY</div>
+        </a>
+        <a href="https://verv.fm/beauty/botanical-bloom" class="preset-card">
+          <video
+            src="assets/verv-category-botanical-bloom-2025-12-02-21-57-31.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">BOTANICAL BLOOM</div>
+        </a>
+        <a href="https://verv.fm/food/fast-food" class="preset-card">
+          <video
+            src="assets/verv-category-fast-food-2025-12-02-21-57-40.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">FAST FOOD</div>
+        </a>
+        <a href="https://verv.fm/food/farm-to-table" class="preset-card">
+          <video
+            src="assets/verv-category-farm-to-table-2025-12-02-21-57-46.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">FARM TO TABLE</div>
+        </a>
+        <a href="https://verv.fm/fitness/nature" class="preset-card">
+          <video
+            src="assets/verv-category-nature-2025-12-02-21-57-58.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">NATURE</div>
+        </a>
+        <a href="https://verv.fm/fitness/classic-studio" class="preset-card">
+          <video
+            src="assets/verv-category-classic-studio-2025-12-02-21-58-04.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">CLASSIC STUDIO</div>
+        </a>
+        <a href="https://verv.fm/home/commercial" class="preset-card">
+          <video
+            src="assets/verv-category-commercial-2025-12-02-21-58-10.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">COMMERCIAL</div>
+        </a>
+        <a href="https://verv.fm/home/retro-futurist" class="preset-card">
+          <video
+            src="assets/verv-category-retro-futurist-2025-12-02-21-58-24.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <div class="preset-label">RETRO FUTURIST</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Choose Art Direction Section -->
+    <section class="choose">
+      <div class="choose-header">
+        <h2 class="choose-title">Choose your art direction, powered by AI</h2>
+        <a href="https://verv.fm/signup" class="choose-input">
+          <span>Explore 50+ Art Direction on VERV</span>
+          <span class="btn btn-primary btn-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="choose-gallery">
+        <div class="choose-img choose-img-1"><img src="assets/figma/09b9734e578ce79673d812d19ae1235a55a0e38a.png" alt=""></div>
+        <div class="choose-img choose-img-2">
+          <video autoplay loop muted playsinline>
+            <source src="assets/verv-template-Man in suit cycling on city street at night-2025-12-02-21-55-47.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="choose-img choose-img-3"><img src="assets/figma/2b62ecc724f628a38802609660eef89852d3278e.png" alt=""></div>
+        <div class="choose-img choose-img-4"><img src="assets/figma/fc0a4446345c76e58c9ff1c7281e1a1fbb32b4c4.png" alt=""></div>
+        <div class="choose-img choose-img-5"><img src="assets/figma/30899b9be828cbe3964f53bab88b278867ab0085.png" alt=""></div>
+        <div class="choose-img choose-img-6"><img src="assets/figma/789ed3f7d84ff087d553466ff1944f11721aa37d.png" alt=""></div>
+        <div class="choose-img choose-img-7"><img src="assets/e305217aa5465af273b1ea68ec09c1bd45115d49.png" alt=""></div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="faq-container">
+        <div class="faq-left">
+          <h2 class="faq-title">FAQ </h2>
+          <p class="faq-description">Everything you need to know about the product and how it works. Can't find an answer? <a href="#">Chat to our team</a>.</p>
+        </div>
+        <div class="faq-right">
+          <div class="faq-item faq-item-open">
+            <div class="faq-question">
+              <span>What is included in the free trial?</span>
+              <button class="faq-toggle faq-toggle-open">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 12.5L10 7.5L15 12.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>You'll get 250 credits during the free trial, which covers roughly 100 images or 25 videos. The trial is active for 3 days from the moment you begin.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I start creating videos?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Start by uploading your product photo and choosing an art direction to set the visual tone. Add any prompt details you want, then generate your images. Each run gives you 4 variations, and you can turn any of them into videos or refine them further with additional prompts.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are "Art Directions"?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Art Directions are VERV's handpicked templates curated by creative directors and real humans, that apply trending, culture-driven visual styles to your product photos and videos. This is what sets VERV apart from traditional AI creation tools. With 50+ options, you can achieve editorial-grade, on-trend results in one click without the "generic AI look" or aesthetic guesswork.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How's VERV better than other traditional AI image and video creation tools?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>VERV gives Ecommerce brands the tools to create studio-quality ads and product photography with true art direction. Where other AI tools produce generic, "AI-looking" results, VERV delivers brand-consistent, art-directed visuals that look and feel real.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How are credits spent?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Generations and edits both cost 10 credits per set of 4 images. Converting any image into a video format also requires 10 credits.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is it safe to use VERV-generated creatives for commercial purposes?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely. Every creative you generate with VERV is commercially safe and ready for use immediately.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Will unused credits roll over to the next month?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>No, unused credits will not roll over.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you have an unlimited or annual plan available?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>We don't offer an unlimited or annual plan at the moment.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>When can I cancel my plan?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>You can cancel your plan at any time. Your subscription will be active until the end of the billing cycle.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-left">
+            <div class="footer-social">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p class="footer-copyright">Copyright © Verv.fm. All All rights reserved</p>
+          </div>
+          <div class="footer-right">
+            <div class="footer-column">
+              <h4>Company</h4>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Prohibited Use Policy</a>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <a href="#">Contact Us</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <span>VERV.FM</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
