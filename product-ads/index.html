@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERV - Product Ads</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main-container">
+    <!-- Hero Section with Background -->
+    <section class="hero-section">
+      <img src="assets/Frame 205622.jpg" alt="" class="hero-bg">
+      
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="assets/Nav bar/LOGO.png" alt="VERV Logo">
+          </div>
+          
+          <div class="nav-links">
+            <a href="#" class="nav-link">
+              Features
+              <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="nav-link">
+              Use cases
+              <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="nav-link">Pricing</a>
+            <a href="#" class="nav-link">Enterprise</a>
+          </div>
+          
+          <div class="nav-cta">
+            <a href="https://verv.fm/signup" class="btn btn-primary btn-medium">Unlock 7 day trial</a>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Editorial visuals,<br>without the studio.</h1>
+          <p class="hero-subtitle">Transform simple product photos into premium, studio-grade ads.</p>
+          <a href="https://verv.fm/signup" class="btn btn-glass btn-large">
+            <span>Start free trial</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.16667 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Creative Stack Section -->
+    <section class="creative-stack">
+      <h2 class="section-title">Full creative stack for<br>modern product advertising</h2>
+      
+      <div class="stack-content">
+        <div class="stack-features">
+          <div class="feature-item active" data-feature="photography">
+            <h3 class="feature-title">Cinematic Photography</h3>
+            <p class="feature-desc">Turn simple product shots into commercial-grade imagery with curated style presets crafted by real creative directors. Get studio-quality visuals without the studio.</p>
+          </div>
+          
+          <div class="feature-item" data-feature="video">
+            <h3 class="feature-title">Product Video Ads</h3>
+            <p class="feature-desc">Generate dynamic, high-quality video ads featuring smooth camera motion, environmental effects, and polished motion graphics. Create video assets without filming or editing.</p>
+          </div>
+          
+          <div class="feature-item" data-feature="presets">
+            <h3 class="feature-title">Art-Directed Presets</h3>
+            <p class="feature-desc">Pick from professionally curated aesthetics across multiple categories (fashion, beauty, home, CPG). Encodes real creative expertise for a premium, on-brand look every time.</p>
+          </div>
+          
+          <div class="feature-item" data-feature="output">
+            <h3 class="feature-title">Multi-Format Output</h3>
+            <p class="feature-desc">Get perfectly formatted assets for every channel (PDPs, website banners, display ads, socials). All generated from a single product photo.</p>
+          </div>
+        </div>
+        
+        <div class="stack-media">
+          <!-- Photography - black & white man with car -->
+          <img src="assets/ccd129ed0d99ccb1f18e39f46e4e5a817472baa8.png" alt="Cinematic photography example" class="stack-image" data-feature="photography">
+          <!-- Video - woman in yellow room -->
+          <video src="assets/frame 205402.mp4" class="stack-video" data-feature="video" autoplay loop muted playsinline></video>
+          <!-- Presets - woman with LUXE GLAM overlay -->
+          <img src="assets/cc3eaa1c374ccfb353223ac12699214a548c908b.png" alt="Art-directed presets example" class="stack-image" data-feature="presets">
+          <!-- Multi-format - man with motorcycle + phone frame -->
+          <div class="stack-multiformat" data-feature="output">
+            <img src="assets/8be7f27ebd97a147cb76cc5b0e7d86c3f558e44f.png" alt="Multi-format output example" class="stack-image-bg">
+            <div class="stack-phone-frame">
+              <img src="assets/cb39cceee752eacad64a6abcb3091c7a62affd08.png" alt="Phone format" class="stack-phone-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+      <div class="section-header">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-subtitle">Create scroll-stopping ads in just 3 steps</p>
+      </div>
+      
+      <!-- NEW ROW: Old Way vs VERV Way comparison -->
+      <div class="hiw-comparison-row">
+        <!-- The Old Way (left) - muted/secondary -->
+        <div class="hiw-comparison-col hiw-old-way">
+          <div class="hiw-old-card">
+            <span class="hiw-label-muted">
+              Traditional AI Tools
+            </span>
+            <p class="hiw-body-text">Write long, hyper-detailed prompts just to get a "cinematic" product ad, and still end up with inconsistent brand style.</p>
+            <span class="hiw-prompt-label">Example prompt:</span>
+            <div class="hiw-prompt-example">
+              <p>"A refined editorial image of an Asian female model in a green chair, off-white blouse, wide-leg trousers, sleek bob, pearl earrings, calm expression, soft diffused lighting, high-end campaign feel..."</p>
+            </div>
+            <p class="hiw-muted-note">Hard to control. Hard to repeat.</p>
+          </div>
+        </div>
+
+        <!-- The VERV Way (right) - hero/highlighted card -->
+        <div class="hiw-comparison-col hiw-verv-way">
+          <div class="hiw-verv-card">
+            <span class="hiw-label-strong">
+              VERV
+            </span>
+            <ul class="hiw-bullet-list">
+              <li>Pick a curated Art Direction</li>
+              <li>Add your product</li>
+              <li>Adjust simple prompt controls</li>
+              <li>Generate on-brand visuals instantly</li>
+            </ul>
+            <p class="hiw-arrow-note">→ No prompt essays. No guesswork.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXISTING ROW: 3-step card + hero image -->
+      <div class="hiw-workflow-row">
+        <!-- Background image for entire container -->
+        <img class="hiw-workflow-bg" src="assets/new background how it works.png" alt="Background">
+        
+        <!-- Left: Form card -->
+        <div class="workflow-form">
+          <div class="form-section">
+            <span class="form-label">ART DIRECTION</span>
+            <div class="form-preview">
+              <img src="assets/789ed3f7d84ff087d553466ff1944f11721aa37d.png" alt="Art direction preview">
+            </div>
+          </div>
+          
+          <button class="btn-add">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 4.16666V15.8333M4.16666 10H15.8333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          
+          <div class="form-section">
+            <span class="form-label">PRODUCT</span>
+            <div class="form-preview product-preview">
+              <img src="assets/804f2fc602fff11897e0611dc1fd3bb2f5b483e4.png" alt="Product preview">
+            </div>
+          </div>
+          
+          <button class="btn-add">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 4.16666V15.8333M4.16666 10H15.8333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          
+          <div class="form-section">
+            <span class="form-label">PROMPT</span>
+            <div class="prompt-attributes">
+              <div class="prompt-attribute-row">
+                <span class="prompt-category-label">Image content</span>
+                <span class="prompt-attribute-tag">Person with product</span>
+              </div>
+              <div class="prompt-attribute-row">
+                <span class="prompt-category-label">Model appearance</span>
+                <span class="prompt-attribute-tag">Female</span>
+              </div>
+              <div class="prompt-attribute-row">
+                <span class="prompt-category-label">Age range</span>
+                <span class="prompt-attribute-tag">Young adult (20–29)</span>
+              </div>
+              <div class="prompt-attribute-row">
+                <span class="prompt-category-label">Body type</span>
+                <span class="prompt-attribute-tag">Average</span>
+              </div>
+              <div class="prompt-attribute-row">
+                <span class="prompt-category-label">Setting</span>
+                <span class="prompt-attribute-tag">Soft neutral wall</span>
+              </div>
+              <div class="prompt-attribute-row">
+                <span class="prompt-category-label">Lighting</span>
+                <span class="prompt-attribute-tag">Soft natural lighting</span>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary btn-medium btn-upload">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2.5V12.5M10 2.5L6.25 6.25M10 2.5L13.75 6.25M2.5 12.5V15C2.5 16.3807 3.61929 17.5 5 17.5H15C16.3807 17.5 17.5 16.3807 17.5 15V12.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Upload your product</span>
+          </button>
+        </div>
+
+        <!-- Right: Text overlay -->
+        <div class="hiw-workflow-right">
+          <span class="hiw-generate-text">Generated by VERV</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section class="key-benefits">
+      <div class="section-header">
+        <h2 class="section-title">Key Benefits</h2>
+      </div>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card benefit-card-dark benefit-card-hover">
+          <h3>Smart AI product<br>ad prompt controls</h3>
+          <div class="benefit-image">
+            <img src="assets/5bc5335dc965965d35fb7bdcbb50907d85087398.png" alt="Smart AI controls">
+          </div>
+          <p>Generic AI tools require complex prompts and still generate inconsistent results. Direct the exact vibe of your product ads with simple prompt controls. Adjust model appearance, environments, lighting and more. No prompt-writing headache.</p>
+          <a href="https://verv.fm/signup" class="btn btn-outline-primary btn-large benefit-cta">
+            <span>Go to VERV</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="benefit-card benefit-card-dark benefit-card-hover">
+          <h3>Editorial-grade visuals that<br>look like real commercial</h3>
+          <div class="benefit-image">
+            <img src="assets/5bc5335dc965965d35fb7bdcbb50907d85087398.png" alt="Editorial visuals">
+          </div>
+          <p>Most AI generators produce images that look artificial or "AI-made." VERV generates editorial-grade, studio-quality product ads with proper lighting, depth, models, textures, and art direction, matching what brands expect from professional shoots.</p>
+          <a href="https://verv.fm/signup" class="btn btn-outline-primary btn-large benefit-cta">
+            <span>Go to VERV</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="benefit-card benefit-card-dark benefit-card-hover">
+          <h3>Purpose-built for<br>Ecommerce product ads</h3>
+          <div class="benefit-image">
+            <img src="assets/5bc5335dc965965d35fb7bdcbb50907d85087398.png" alt="Ecommerce product ads">
+          </div>
+          <p>VERV is built specifically for ecommerce. Product shots, PDPs, storefronts, UGC ads, lifestyle scenes, on-model visuals and branded ad assets. Instead of hiring models, photographers, retouchers, or studios, VERV gives brands the creative power of a full studio for a fraction of the cost with conversion-ready visuals.</p>
+          <a href="https://verv.fm/signup" class="btn btn-outline-primary btn-large benefit-cta">
+            <span>Go to VERV</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="benefit-card benefit-card-dark benefit-card-hover">
+          <h3>Trend-driven style presets for<br>brand that removes the "AI Look"</h3>
+          <div class="benefit-image">
+            <img src="assets/5bc5335dc965965d35fb7bdcbb50907d85087398.png" alt="Trend-driven presets">
+          </div>
+          <p>Stay culturally on-trend, effortlessly. Stay ahead of shifting ecommerce trends and update your creatives in seconds instead of weeks. Unlike generic style libraries, VERV's art-directed styles are hand-curated by creative directors and real humans, tracking trends across fashion, beauty, home, and CPG markets.</p>
+          <a href="https://verv.fm/signup" class="btn btn-outline-primary btn-large benefit-cta">
+            <span>Go to VERV</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Made with VERV Section -->
+    <section class="made-with-verv">
+      <div class="section-header">
+        <h2 class="section-title">Made with VERV</h2>
+      </div>
+      
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <span class="showcase-number">01</span>
+          <div class="showcase-image showcase-image-square">
+            <img src="assets/f2388eaefe864beb86d6900a31dd9eeabe58f3c2.png" alt="Showcase 1">
+            <div class="showcase-thumb">
+              <img src="assets/76213fe4b3da2170a0d602e49c794f1b76fe611f.png" alt="Thumbnail">
+            </div>
+          </div>
+          <h4>LUXR GLAM</h4>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Outdoor</span>
+            <span class="showcase-tag">Sunlight</span>
+          </div>
+          <div class="showcase-details">
+            <p>Model in a cream suit and brown boots, holding a cowboy hat, standing in a quiet desert motel courtyard with pastel doors and tumbleweeds.</p>
+          </div>
+        </div>
+        
+        <div class="showcase-item">
+          <span class="showcase-number">02</span>
+          <div class="showcase-image showcase-image-portrait">
+            <img src="assets/2acf423835ebf565be9ee307d431d7f10aa63d07.png" alt="Showcase 2">
+            <div class="showcase-thumb">
+              <img src="assets/11ca702e7e1e77613280edf854e3b1caf57d0ded.png" alt="Thumbnail">
+            </div>
+          </div>
+          <h4>MINIMAL LUXE</h4>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Beige backdrop</span>
+            <span class="showcase-tag">Soft natural lighting</span>
+          </div>
+          <div class="showcase-details">
+            <p>Man in a white shirt and black pants stands on green grass, with the product placed before him.</p>
+          </div>
+        </div>
+        
+        <div class="showcase-item">
+          <span class="showcase-number">03</span>
+          <div class="showcase-image showcase-image-square">
+            <img src="assets/5bc5335dc965965d35fb7bdcbb50907d85087398.png" alt="Showcase 3">
+            <div class="showcase-thumb showcase-thumb-contain">
+              <img src="assets/8b39942826178dafa9ee81a71d0893ddf3ca72ae.png" alt="Thumbnail">
+            </div>
+          </div>
+          <h4>ORGANIC NATURAL</h4>
+          <div class="showcase-tags">
+            <span class="showcase-tag">Desert</span>
+            <span class="showcase-tag">Cinematic</span>
+          </div>
+          <div class="showcase-details">
+            <p>Man in a light blue suit walks across wide desert sand dunes, leaving footprints behind, with a motorcycle parked nearby.</p>
+          </div>
+        </div>
+        
+        <div class="showcase-item">
+          <span class="showcase-number">04</span>
+          <div class="showcase-image showcase-image-tall">
+            <img src="assets/199205022b6c68bd6eda9e14f899dd2029aa9f0a.png" alt="Showcase 4">
+            <div class="showcase-thumb">
+              <img src="assets/4734d5c8db5ddc9a2e30bf1a9cea15930137a9a2.png" alt="Thumbnail">
+            </div>
+          </div>
+          <h4>NOSTALGIC COOL</h4>
+          <div class="showcase-tags">
+            <span class="showcase-tag">White backdrop</span>
+            <span class="showcase-tag">Bright & airy</span>
+          </div>
+          <div class="showcase-details">
+            <p>Woman wearing the product walks on a bright, reflective surface with a white horse behind her.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upgrade Your Product Images Section -->
+    <section class="upgrade-section">
+      <div class="section-header">
+        <h2 class="section-title">Upgrade your product images</h2>
+        <p class="section-subtitle">Watch your raw photo turn into a studio-quality visual that drives clicks and conversions.</p>
+      </div>
+      
+      <!-- Row 1: Teddy bear before/after -->
+      <div class="comparison-row comparison-row-new">
+        <div class="comparison-card comparison-before-new">
+          <img src="assets/fee856f627b32b65c23ef2d745a2f111c96f7049.png" alt="Teddy bear product shot">
+          <span class="comparison-label-new comparison-label-dark">Before</span>
+        </div>
+        <div class="comparison-card comparison-after-new">
+          <img src="assets/61a4b1c2c80a95fc04e86af896d443d9925ad0ab.png" alt="Girl with teddy bear - Christmas scene">
+          <span class="comparison-label-new comparison-label-light">After</span>
+        </div>
+      </div>
+      
+      <!-- Row 2: Earrings before/after -->
+      <div class="comparison-row comparison-row-new">
+        <div class="comparison-card comparison-before-new">
+          <img src="assets/ff6128107f63bd1de55496d626e77b2f8e5c92f2.png" alt="Earrings product shot">
+          <span class="comparison-label-new comparison-label-dark">Before</span>
+        </div>
+        <div class="comparison-card comparison-after-new">
+          <img src="assets/8749ddc86678086ec9db1039722a729b0fbb6e94.png" alt="Woman wearing earrings">
+          <span class="comparison-label-new comparison-label-dark">After</span>
+        </div>
+      </div>
+      
+      <a href="https://verv.fm/signup" class="btn btn-primary btn-large">
+        <span>Start free trial</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.16667 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="faq-container">
+        <div class="faq-left">
+          <div class="faq-header">
+            <h2 class="faq-title">FAQ</h2>
+            <p class="faq-description">Everything you need to know about the product and how it works. Can't find an answer? <a href="#">Chat to our team</a>.</p>
+          </div>
+        </div>
+        
+        <div class="faq-right">
+          <div class="faq-item faq-item-open">
+            <div class="faq-question">
+              <span>What is included in the free trial?</span>
+              <button class="faq-toggle faq-toggle-open">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12.5L10 7.5L15 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>You'll get 250 credits during the free trial, which covers roughly 100 images or 25 videos. The trial is active for 3 days from the moment you begin.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I start creating videos?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Start by uploading your product photo and choosing an art direction to set the visual tone. Add any prompt details you want, then generate your images. Each run gives you 4 variations, and you can turn any of them into videos or refine them further with additional prompts.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are "Art Directions"?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Art Directions are VERV's handpicked templates curated by creative directors and real humans, that apply trending, culture-driven visual styles to your product photos and videos. This is what sets VERV apart from traditional AI creation tools. With 50+ options, you can achieve editorial-grade, on-trend results in one click without the "generic AI look" or aesthetic guesswork.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How's VERV better than other traditional AI image and video creation tools?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>VERV gives Ecommerce brands the tools to create studio-quality ads and product photography with true art direction. Where other AI tools produce generic, "AI-looking" results, VERV delivers brand-consistent, art-directed visuals that look and feel real.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How are credits spent?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Generations and edits both cost 10 credits per set of 4 images. Converting any image into a video format also requires 10 credits.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is it safe to use VERV-generated creatives for commercial purposes?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely. Every creative you generate with VERV is commercially safe and ready for use immediately.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Will unused credits roll over to the next month?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>No, unused credits will not roll over.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you have an unlimited or annual plan available?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>We don't offer an unlimited or annual plan at the moment.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>When can I cancel my plan?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>You can cancel your plan at any time. Your subscription will be active until the end of the billing cycle.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-left">
+            <div class="footer-social">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 0H6.5C2.91 0 0 2.91 0 6.5V17.5C0 21.09 2.91 24 6.5 24H17.5C21.09 24 24 21.09 24 17.5V6.5C24 2.91 21.09 0 17.5 0ZM12 18.5C8.41 18.5 5.5 15.59 5.5 12C5.5 8.41 8.41 5.5 12 5.5C15.59 5.5 18.5 8.41 18.5 12C18.5 15.59 15.59 18.5 12 18.5ZM18.5 6.5C17.67 6.5 17 5.83 17 5C17 4.17 17.67 3.5 18.5 3.5C19.33 3.5 20 4.17 20 5C20 5.83 19.33 6.5 18.5 6.5Z" fill="white"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="white"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1Z" fill="white"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p class="footer-copyright">Copyright © Verv.fm. All All rights reserved</p>
+          </div>
+          
+          <div class="footer-right">
+            <div class="footer-column">
+              <h4>Company</h4>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Prohibited Use Policy</a>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <a href="#">Contact Us</a>
+              <a href="#">Help Center</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-logo">
+          <span>VERV.FM</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+
+
