@@ -182,7 +182,7 @@ body {
 .hero-image-5 {
   width: 160px;
   height: 232px;
-  left: 0;
+  left: calc(50% - 700px);
   top: 574px;
 }
 
@@ -523,6 +523,12 @@ body {
   
   .content-row {
     gap: 40px;
+    max-width: 100%;
+  }
+  
+  .content-text {
+    flex: 0 0 360px;
+    max-width: 360px;
   }
   
   .content-image,
@@ -694,6 +700,8 @@ body {
   }
   
   .content-text {
+    flex: 1 1 100%;
+    max-width: 100%;
     gap: 24px;
     order: 1;
   }
@@ -860,15 +868,19 @@ body {
   width: 100%;
   padding: 40px 128px;
   z-index: 5;
+  display: flex;
+  justify-content: center;
 }
 
 .content-row {
   display: flex;
-  gap: 80px;
+  gap: 60px;
   align-items: center;
   justify-content: center;
   padding: 24px;
   border-radius: 16px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 /* Feature Card Hover Effect */
@@ -903,7 +915,8 @@ body {
 }
 
 .content-text {
-  flex: 1;
+  flex: 0 0 480px;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -982,6 +995,7 @@ body {
   height: 198px;
   left: 238px;
   top: 189px;
+  object-position: center 20%;
 }
 
 .lookbook-img-2 {
@@ -989,6 +1003,7 @@ body {
   height: 198px;
   left: 1px;
   top: 1px;
+  object-position: center 25%;
 }
 
 .lookbook-img-3 {
@@ -1004,7 +1019,7 @@ body {
 }
 
 .scale-image {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .scale-img {
