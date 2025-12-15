@@ -909,34 +909,43 @@ body {
 
 .style-card img {
   position: absolute;
+  border-radius: 8px;
+}
+
+/* Card 1: Wooden post - standard cover */
+.style-card-1 img {
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  object-position: 50% 50%;
 }
 
-.style-card::after {
-  content: '';
-  position: absolute;
+/* Card 2: Grass with trees - zoomed and positioned */
+.style-card-2 img {
+  width: 283.02%;
+  height: 120.88%;
+  left: -86.55%;
+  top: -20.88%;
+  max-width: none;
+}
+
+/* Card 3: Chair - fill container, center product */
+.style-card-3 img {
   inset: 0;
-  border-radius: 8px;
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
 }
 
-.style-card-green::after {
-  background: rgba(168, 255, 68, 0.4);
-  mix-blend-mode: color-burn;
-}
-
-.style-card-blue::after {
-  background: rgba(68, 93, 255, 0.4);
-  mix-blend-mode: color-burn;
-}
-
-.style-card-pink::after {
-  background: rgba(234, 114, 255, 0.4);
-  mix-blend-mode: color-burn;
+/* Card 4: Ocean fence post - zoomed and positioned */
+.style-card-4 img {
+  width: 132.08%;
+  height: 142.92%;
+  left: -6.99%;
+  top: -23.68%;
+  max-width: none;
 }
 
 .style-card-label {
@@ -1038,6 +1047,9 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  /* Generic AI column - dimmed for lower visual priority */
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   letter-spacing: -0.14px;
   color: var(--color-white);
   border-left: 1px solid var(--color-white-20);
@@ -1058,12 +1070,16 @@ body {
   font-weight: 500;
   line-height: 26px;
   letter-spacing: -0.27px;
-  color: var(--color-white-100, #FFF);
+  color: rgba(153, 153, 153, 0.8); /* Muted gray for Generic AI header */
   position: relative;
 }
 
+/* VERV header - dominant, brand yellow, larger, bold */
 .table-cell-highlight {
-  color: var(--color-primary);
+  color: var(--color-primary, #eff31b);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
 }
 
 .verv-gradient {
@@ -1092,9 +1108,35 @@ body {
   padding-right: 16px;
 }
 
+/* Generic AI column - dimmed, lower priority */
+.table-cell-generic {
+  background: rgba(30, 30, 30, 0.8); /* Slightly brighter dark background */
+  color: rgba(255, 255, 255, 0.65); /* Slightly brighter dimmed text */
+  font-size: 16px; /* Proportional font size */
+  font-weight: 400;
+}
+
+/* VERV column - dominant, brighter, olive/yellow tint background */
 .table-cell-verv {
-  background: var(--color-primary-10);
+  background: rgba(50, 51, 20, 0.6); /* Olive/yellow tinted dark background */
   position: relative;
+  color: rgba(255, 255, 255, 0.95); /* Brighter white text */
+  font-size: 17px; /* Larger font size for dominance */
+  font-weight: 600; /* Bold text */
+  border-left: 1px solid rgba(100, 100, 100, 0.3); /* Subtle vertical divider */
+}
+
+/* VERV header cell - also needs the divider and background */
+.table-cell-header.table-cell-highlight {
+  background: rgba(50, 51, 20, 0.6);
+  border-left: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+/* VERV checkmark - brand yellow */
+.verv-check {
+  color: var(--color-primary, #eff31b);
+  font-weight: 700;
+  margin-right: 4px;
 }
 
 /* ============================================
@@ -1162,7 +1204,7 @@ body {
    ============================================ */
 .curated {
   display: flex;
-  padding: 100px 24px;
+  padding: 100px 128px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -1175,8 +1217,8 @@ body {
 
 .curated-wrapper {
   position: relative;
-  width: fit-content;
-  max-width: 1800px;
+  width: 100%;
+  max-width: 1544px;
   margin: 0 auto;
 }
 
@@ -1220,12 +1262,10 @@ body {
 .curated-thumbnails-row {
   display: flex;
   align-items: flex-end;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-top: -350px;
-  margin-left: -73px;
+  margin-top: -500px;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .curated-title {
@@ -1278,14 +1318,15 @@ body {
 
 /* Gap between card 01 and 02 - positions 02 at the right edge of main image */
 .curated-thumb-01 {
-  margin-right: 330px;
+  margin-left: -40px;
+  margin-right: 296px;
 }
 
-/* Gap between cards 02, 03, 04, 05 is 52px */
+/* Gap between cards 02, 03, 04, 05 is 40px */
 .curated-thumb-02,
 .curated-thumb-03,
 .curated-thumb-04 {
-  margin-right: 52px;
+  margin-right: 40px;
 }
 
 .thumb-image-container {
@@ -2225,9 +2266,9 @@ a.preset-card {
   }
   
   .curated-thumbnails-row {
-    margin-top: 24px;
+    margin-top: 32px;
     margin-left: 0;
-    padding: 0;
+    padding: 0 16px;
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
@@ -2564,9 +2605,21 @@ a.preset-card {
     font-size: 13px;
   }
   
+  .table-cell-header.table-cell-highlight {
+    font-size: 14px;
+  }
+  
   .table-cell-label {
     padding-left: 12px;
     padding-right: 6px;
+    font-size: 12px;
+  }
+  
+  .table-cell-generic {
+    font-size: 11px;
+  }
+  
+  .table-cell-verv {
     font-size: 12px;
   }
   
@@ -2616,11 +2669,13 @@ a.preset-card {
   }
   
   .curated-thumbnails-row {
+    margin-top: 24px;
+    margin-left: 0;
     overflow-x: auto;
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 12px;
-    padding-bottom: 8px;
+    padding: 0 16px 8px 16px;
     -webkit-overflow-scrolling: touch;
   }
   
@@ -2628,21 +2683,29 @@ a.preset-card {
     flex-shrink: 0;
   }
   
+  .curated-thumb-01,
+  .curated-thumb-02,
+  .curated-thumb-03,
+  .curated-thumb-04 {
+    margin-right: 0;
+  }
+  
   .curated-thumb-01 .thumb-image-container,
   .curated-thumb-02 .thumb-image-container,
   .curated-thumb-03 .thumb-image-container,
   .curated-thumb-05 .thumb-image-container {
-    width: 100px;
-    height: 130px;
+    width: 120px;
+    height: 160px;
   }
   
   .curated-thumb-04 .thumb-image-container {
-    width: 180px;
-    height: 130px;
+    width: 200px;
+    height: 160px;
   }
   
   .thumbnail-label {
     font-size: 12px;
+    text-align: left;
   }
   
   /* Explore Section - Mobile */
