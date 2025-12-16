@@ -1318,7 +1318,7 @@ body {
 .showcase-image {
   width: 100%;
   border-radius: 8px;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
 }
 
@@ -1326,6 +1326,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .showcase-image-square {

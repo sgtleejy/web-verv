@@ -438,6 +438,7 @@ body {
     border-radius: 8px;
     border: 2px solid #c6bca8;
     overflow: hidden;
+    background-color: #ffffff;
 }
 
 .video-product-blue {
@@ -517,6 +518,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: calc(50% + 100px) center;
 }
 
 .how-form {
@@ -597,6 +599,44 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: var(--color-white-30);
+}
+
+/* Prompt Attributes Styles */
+.prompt-attributes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.prompt-attribute-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.prompt-category-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--color-white-40);
+    text-transform: uppercase;
+    flex-shrink: 0;
+    width: 140px;
+}
+
+.prompt-attribute-tag {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 8px 16px;
+    border-radius: 4px;
 }
 
 .btn-upload {
@@ -816,7 +856,8 @@ body {
 }
 
 /* FAQ Section */
-.faq-section {
+.faq-section,
+.faq {
     background-color: var(--color-foreground-white-10);
     padding: 100px 128px;
 }
@@ -828,7 +869,8 @@ body {
     margin: 0 auto;
 }
 
-.faq-header {
+.faq-header,
+.faq-left {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -843,7 +885,8 @@ body {
     color: var(--color-white-100);
 }
 
-.faq-subtitle {
+.faq-subtitle,
+.faq-description {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -853,12 +896,14 @@ body {
     max-width: 505px;
 }
 
-.faq-subtitle a {
+.faq-subtitle a,
+.faq-description a {
     color: var(--color-white-80);
     text-decoration: underline;
 }
 
-.faq-list {
+.faq-list,
+.faq-right {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -913,11 +958,13 @@ body {
     display: none;
 }
 
-.faq-item.expanded .faq-answer {
+.faq-item.expanded .faq-answer,
+.faq-item.faq-item-open .faq-answer {
     display: block;
 }
 
-.faq-item.expanded .faq-toggle {
+.faq-item.expanded .faq-toggle,
+.faq-item.faq-item-open .faq-toggle {
     transform: rotate(180deg);
 }
 
