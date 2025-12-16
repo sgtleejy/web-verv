@@ -1420,6 +1420,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 56px;
+  background: #E6E4E0;
 }
 
 .upgrade-section .section-header {
@@ -1428,12 +1429,14 @@ body {
 
 .upgrade-section .section-title {
   font-size: 48px;
+  color: #000000;
 }
 
 .upgrade-section .section-subtitle {
   max-width: 1412px;
   font-size: 18px;
   line-height: 26px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* New comparison row layout */

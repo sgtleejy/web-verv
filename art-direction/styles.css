@@ -1163,6 +1163,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 100px 0;
+  gap: 10px;
+  align-self: stretch;
 }
 
 .manifesto-bg {
@@ -1171,6 +1173,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center calc(35% + 100px);
 }
 
 .manifesto-card {
@@ -2211,7 +2214,7 @@ a.preset-card {
   }
   
   .manifesto-container {
-    height: 600px;
+    aspect-ratio: 1544 / 1000;
     padding: 60px 24px;
   }
   
@@ -2629,7 +2632,7 @@ a.preset-card {
   }
   
   .manifesto-container {
-    height: 500px;
+    aspect-ratio: 1544 / 1000;
     padding: 40px 16px;
   }
   

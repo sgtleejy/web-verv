@@ -334,12 +334,16 @@ body {
 /* Feature Sections */
 .feature-section {
     padding: 100px 128px;
+    display: flex;
+    justify-content: center;
 }
 
 .feature-content {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
+    max-width: 1300px;
+    width: 100%;
 }
 
 /* Feature Card Hover Effect */
@@ -348,9 +352,10 @@ body {
     background: transparent;
     transition: transform 0.3s ease, background 0.3s ease;
     cursor: pointer;
-    overflow: hidden;
-    padding: 24px;
+    overflow: visible;
+    padding: 60px 80px;
     border-radius: 16px;
+    margin: -60px -80px;
 }
 
 .feature-card-hover::before {
@@ -380,7 +385,8 @@ body {
 }
 
 .feature-text {
-    flex: 1;
+    flex: 0 0 520px;
+    max-width: 520px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -389,11 +395,10 @@ body {
 
 .feature-title {
     font-family: 'Sequel100Black-45', sans-serif;
-    font-size: 32px;
-    line-height: 44px;
-    letter-spacing: -0.64px;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.56px;
     color: var(--color-white-100);
-    white-space: nowrap;
 }
 
 .feature-description {
@@ -426,8 +431,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    padding-top: 61px;
+    overflow: visible;
 }
 
 .stacked-cards {
@@ -480,9 +484,11 @@ body {
     width: 588px;
     height: 388px;
     border-radius: 8px;
-    overflow: hidden;
-    background-color: var(--color-black);
+    overflow: visible;
+    background-color: transparent;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
 
 .gallery-strip {
@@ -1025,6 +1031,11 @@ body {
         gap: 40px;
     }
     
+    .feature-text {
+        flex: 0 0 400px;
+        max-width: 400px;
+    }
+    
     .feature-image {
         width: 480px;
         height: 320px;
@@ -1048,6 +1059,11 @@ body {
     .feature-content,
     .feature-content.reverse {
         flex-direction: column;
+    }
+    
+    .feature-text {
+        flex: 1 1 auto;
+        max-width: 100%;
     }
     
     .feature-image,
