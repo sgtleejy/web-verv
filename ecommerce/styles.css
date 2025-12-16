@@ -599,7 +599,7 @@ body {
     position: absolute;
     top: -16px;
     right: 18%;
-    transform: translateX(50%) translateY(-100%);
+    transform: translateX(50%) translateY(-50%);
     background-color: var(--color-primary);
     color: var(--color-black);
     font-family: 'Inter', sans-serif;
@@ -610,13 +610,14 @@ body {
     padding: 10px 24px;
     border-radius: 24px;
     white-space: nowrap;
+    z-index: 10;
 }
 
 .comparison-table {
     width: 100%;
     border: 1px solid var(--color-white-20);
     border-radius: 16px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .comparison-table table {
@@ -675,18 +676,25 @@ body {
 .comparison-table th.highlight {
     color: var(--color-primary);
     position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: rgba(40, 40, 40, 1);
+    border: 2px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-white-20);
+    padding: 28px 20px;
 }
 
-.comparison-table th.highlight::after {
+.comparison-table th.highlight::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 500px;
-    background: linear-gradient(180deg, rgba(239, 243, 27, 0.25) 0%, rgba(239, 243, 27, 0.08) 60%, rgba(239, 243, 27, 0) 100%);
-    pointer-events: none;
-    z-index: -1;
+    top: -16px;
+    left: -2px;
+    right: -2px;
+    height: 16px;
+    background-color: rgba(40, 40, 40, 1);
+    border: 2px solid var(--color-primary);
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
 }
 
 .comparison-table td {
@@ -707,15 +715,54 @@ body {
 }
 
 .comparison-table td.highlight {
-    background-color: rgba(239, 243, 27, 0.12);
+    background-color: rgba(40, 40, 40, 1);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.16px;
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--color-white-100);
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+    padding: 24px 20px;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+.comparison-table tr:last-child td.highlight {
+    border-bottom: 2px solid var(--color-primary);
+    border-radius: 0 0 12px 12px;
+}
+
+.comparison-table tr:last-child td.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: -2px;
+    right: -2px;
+    height: 16px;
+    background-color: rgba(40, 40, 40, 1);
+    border: 2px solid var(--color-primary);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
 }
 
 .comparison-table s {
-    opacity: 0.6;
+    opacity: 0.5;
+    color: var(--color-white-60);
+}
+
+/* Yellow checkmarks for VERV column */
+.verv-check {
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+/* Emphasized price in VERV column */
+.verv-price {
+    color: var(--color-primary);
+    font-size: 24px;
+    font-weight: 700;
 }
 
 /* FAQ Section */

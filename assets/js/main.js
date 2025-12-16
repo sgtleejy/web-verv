@@ -106,15 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (!navbar) return;
 
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      
-      if (currentScroll > 100) {
-        navbar.style.background = 'rgba(0, 0, 0, 0.95)';
-      } else {
-        navbar.style.background = 'transparent';
-      }
-    });
+    // Keep navbar black at all times
+    navbar.style.background = '#000000';
   }
 
   // ============================================
