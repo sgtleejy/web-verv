@@ -21,23 +21,28 @@ function initFaqAccordion() {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         
-        question.addEventListener('click', () => {
-            // Close other items
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('expanded')) {
-                    otherItem.classList.remove('expanded');
-                }
+        if (question) {
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('expanded');
+                        otherItem.classList.remove('faq-item-open');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('expanded');
+                item.classList.toggle('faq-item-open');
             });
-            
-            // Toggle current item
-            item.classList.toggle('expanded');
-        });
+        }
     });
 }
 
 // Category Hover Effects
 function initCategoryHover() {
     const categoryItems = document.querySelectorAll('.category-item');
+    const categoryVideo = document.getElementById('categoryVideo');
     
     categoryItems.forEach(item => {
         item.addEventListener('mouseenter', () => {
@@ -45,6 +50,16 @@ function initCategoryHover() {
             categoryItems.forEach(i => i.classList.remove('category-active'));
             // Add active class to hovered item
             item.classList.add('category-active');
+            
+            // Change video source if video element exists
+            if (categoryVideo && item.dataset.video) {
+                const source = categoryVideo.querySelector('source');
+                if (source) {
+                    source.src = item.dataset.video;
+                    categoryVideo.load();
+                    categoryVideo.play();
+                }
+            }
         });
     });
 }

@@ -5,19 +5,22 @@ document.addEventListener('DOMContentLoaded', function() {
   faqItems.forEach(item => {
     const toggle = item.querySelector('.faq-toggle');
     
-    toggle.addEventListener('click', () => {
-      // Close all other FAQ items
-      faqItems.forEach(otherItem => {
-        if (otherItem !== item) {
-          otherItem.classList.remove('faq-item-open');
-          otherItem.querySelector('.faq-toggle').classList.remove('faq-toggle-open');
-        }
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        // Close all other FAQ items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('faq-item-open');
+            const otherToggle = otherItem.querySelector('.faq-toggle');
+            if (otherToggle) otherToggle.classList.remove('faq-toggle-open');
+          }
+        });
+        
+        // Toggle current item
+        item.classList.toggle('faq-item-open');
+        toggle.classList.toggle('faq-toggle-open');
       });
-      
-      // Toggle current item
-      item.classList.toggle('faq-item-open');
-      toggle.classList.toggle('faq-toggle-open');
-    });
+    }
   });
 });
 

@@ -8,6 +8,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is included in the free trial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You'll get 250 credits during the free trial, which covers roughly 100 images or 25 videos. The trial is active for 3 days from the moment you begin."
+        }
+      },{
+        "@type": "Question",
+        "name": "Do creatives have a watermark during the free trial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. All creatives generated during the free trial are watermark-free, ready to download, and can be used immediately."
+        }
+      },{
+        "@type": "Question",
+        "name": "How do I start creating videos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start by uploading your product photo and choosing an art direction to set the visual tone. Add any prompt details you want, then generate your images. Each run gives you 4 variations, and you can turn any of them into videos or refine them further with additional prompts."
+        }
+      },{
+        "@type": "Question",
+        "name": "What are "Art Directions"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Art Directions are VERV's handpicked templates curated by creative directors and real humans, that apply trending, culture-driven visual styles to your product photos and videos. This is what sets VERV apart from traditional AI creation tools. With 50+ options, you can achieve editorial-grade, on-trend results in one click without the \"generic AI look\" or aesthetic guesswork."
+        }
+      },{
+        "@type": "Question",
+        "name": "How's VERV better than other traditional AI image and video creation tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VERV gives Ecommerce brands the tools to create studio-quality ads and product photography with true art direction. Where other AI tools produce generic, \"AI-looking\" results, VERV delivers brand-consistent, art-directed visuals that look and feel real."
+        }
+      },{
+        "@type": "Question",
+        "name": "How are credits spent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generations and edits both cost 10 credits per set of 4 images. Converting any image into a video format also requires 10 credits."
+        }
+      },{
+        "@type": "Question",
+        "name": "Is it safe to use VERV-generated creatives for commercial purposes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Every creative you generate with VERV is commercially safe and ready for use immediately."
+        }
+      },{
+        "@type": "Question",
+        "name": "Will unused credits roll over to the next month?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, unused credits will not roll over."
+        }
+      },{
+        "@type": "Question",
+        "name": "Do you have an unlimited or annual plan available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We don't offer an unlimited or annual plan at the moment."
+        }
+      },{
+        "@type": "Question",
+        "name": "Is there an AI image generator made for Shopify stores?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VERV is commonly used by Shopify brands to create PDP images, product ads, and UGC-style creatives. It fits directly into e-commerce workflows and supports commercial usage."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -200,36 +277,39 @@
 
     <!-- Categories Section -->
     <section class="categories-section">
-        <h2 class="categories-title">Create unlimited content for your brand</h2>
-        <div class="categories-list">
-            <div class="category-item">
-                <span class="category-number">01</span>
-                <span class="category-name">Fashion</span>
+        <h2 class="categories-title">Unlimited creative direction for your brand</h2>
+        <div class="categories-wrapper">
+            <div class="categories-list">
+                <div class="category-item" data-video="assets/01.mp4">
+                    <span class="category-number">01</span>
+                    <span class="category-name">Fashion</span>
+                </div>
+                <div class="category-item category-active" data-video="assets/02.mp4">
+                    <span class="category-number">02</span>
+                    <span class="category-name">Beauty</span>
+                </div>
+                <div class="category-item" data-video="assets/03.mp4">
+                    <span class="category-number">03</span>
+                    <span class="category-name">Food</span>
+                </div>
+                <div class="category-item" data-video="assets/04.mp4">
+                    <span class="category-number">04</span>
+                    <span class="category-name">Fitness</span>
+                </div>
+                <div class="category-item" data-video="assets/05.mp4">
+                    <span class="category-number">05</span>
+                    <span class="category-name">Home</span>
+                </div>
+                <div class="category-item" data-video="assets/06.mp4">
+                    <span class="category-number">06</span>
+                    <span class="category-name">UGC</span>
+                </div>
             </div>
-            <div class="category-item category-active">
-                <span class="category-number">02</span>
-                <span class="category-name">Beauty</span>
+            <div class="category-video-preview">
+                <video autoplay loop muted playsinline class="category-video" id="categoryVideo">
+                    <source src="assets/02.mp4" type="video/mp4">
+                </video>
             </div>
-            <div class="category-item">
-                <span class="category-number">03</span>
-                <span class="category-name">Food</span>
-            </div>
-            <div class="category-item">
-                <span class="category-number">04</span>
-                <span class="category-name">Fitness</span>
-            </div>
-            <div class="category-item">
-                <span class="category-number">05</span>
-                <span class="category-name">Home</span>
-            </div>
-            <div class="category-item">
-                <span class="category-number">06</span>
-                <span class="category-name">UGC</span>
-            </div>
-        </div>
-        <div class="category-preview-images">
-            <img src="assets/b727ea782d1183b8cfb2c9bbb4a9bd7411407e3e.png" alt="Category preview" class="category-preview-main">
-            <img src="assets/124dce42a5f21cca8fe49048e944138d345263fa.png" alt="Category preview small" class="category-preview-small">
         </div>
     </section>
 
@@ -251,12 +331,14 @@
                         <img src="assets/5e93ef81d1dc5c63bfe0728eef133c55d30d128c.png" alt="">
                     </div>
                 </div>
-                <p class="testimonial-quote">"I work with a wide stack of AI creative tools daily, and VERV is the one I recommend. It's intuitive and consistently delivers believable, editorial-style results; the Glam look is my go-to. I've already produced several videos for our e-shop and social channels with VERV."</p>
+                <p class="testimonial-quote">"I work with a wide stack of AI creative tools daily, and VERV is the one I consistently recommend. The art direction actually feels intentional, not random or over-processed. The visuals look editorial and convert well across Amazon PDPs and ads."</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar"></div>
+                    <div class="testimonial-avatar">
+                        <img src="assets/review 1.jpg" alt="Jana O">
+                    </div>
                     <div class="testimonial-info">
-                        <span class="testimonial-name">Jana Oriešek</span>
-                        <span class="testimonial-role">Creative Account Manager / Amazon Specialist</span>
+                        <span class="testimonial-name">Jana O</span>
+                        <span class="testimonial-role">Creative Account Manager, Amazon Specialist</span>
                     </div>
                 </div>
             </div>
@@ -274,12 +356,14 @@
                         <img src="assets/5e93ef81d1dc5c63bfe0728eef133c55d30d128c.png" alt="">
                     </div>
                 </div>
-                <p class="testimonial-quote">"I work with a wide stack of AI creative tools daily, and VERV is the one I recommend. It's intuitive and consistently delivers believable, editorial-style results; the Glam look is my go-to. I've already produced several videos for our e-shop and social channels with VERV."</p>
+                <p class="testimonial-quote">"VERV completely changed how we produce ad creatives. We can test multiple styles quickly without running full shoots, and the results don't look 'AI.' It's helped us iterate faster and launch higher-quality creatives across paid social."</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar"></div>
+                    <div class="testimonial-avatar">
+                        <img src="assets/review 2.jpg" alt="Michael C">
+                    </div>
                     <div class="testimonial-info">
-                        <span class="testimonial-name">Jana Oriešek</span>
-                        <span class="testimonial-role">Creative Account Manager / Amazon Specialist</span>
+                        <span class="testimonial-name">Michael C</span>
+                        <span class="testimonial-role">Senior Ecommerce Marketer</span>
                     </div>
                 </div>
             </div>
@@ -297,12 +381,14 @@
                         <img src="assets/5e93ef81d1dc5c63bfe0728eef133c55d30d128c.png" alt="">
                     </div>
                 </div>
-                <p class="testimonial-quote">"I work with a wide stack of AI creative tools daily, and VERV is the one I recommend. It's intuitive and consistently delivers believable, editorial-style results; the Glam look is my go-to. I've already produced several videos for our e-shop and social channels with VERV."</p>
+                <p class="testimonial-quote">"Before VERV, our AI visuals felt generic and inconsistent. With VERV, everything looks cohesive including lighting, mood, and composition. It's like having an always-on creative studio without the overhead."</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar"></div>
+                    <div class="testimonial-avatar">
+                        <img src="assets/review 3.jpg" alt="Daniel M">
+                    </div>
                     <div class="testimonial-info">
-                        <span class="testimonial-name">Jana Oriešek</span>
-                        <span class="testimonial-role">Creative Account Manager / Amazon Specialist</span>
+                        <span class="testimonial-name">Daniel M</span>
+                        <span class="testimonial-role">Head of Growth, DTC Brand</span>
                     </div>
                 </div>
             </div>
@@ -317,17 +403,31 @@
           <p class="faq-description">Everything you need to know about the product and how it works. Can't find an answer? <a href="#">Chat to our team</a>.</p>
         </div>
         <div class="faq-right">
-          <div class="faq-item faq-item-open">
+          <div class="faq-item">
             <div class="faq-question">
               <span>What is included in the free trial?</span>
-              <button class="faq-toggle faq-toggle-open">
+              <button class="faq-toggle">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M5 12.5L10 7.5L15 12.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
             </div>
             <div class="faq-answer">
               <p>You'll get 250 credits during the free trial, which covers roughly 100 images or 25 videos. The trial is active for 3 days from the moment you begin.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do creatives have a watermark during the free trial?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>No. All creatives generated during the free trial are watermark-free, ready to download, and can be used immediately.</p>
             </div>
           </div>
           <div class="faq-divider"></div>
@@ -426,6 +526,20 @@
             </div>
             <div class="faq-answer">
               <p>We don't offer an unlimited or annual plan at the moment.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is there an AI image generator made for Shopify stores?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>VERV is commonly used by Shopify brands to create PDP images, product ads, and UGC-style creatives. It fits directly into e-commerce workflows and supports commercial usage.</p>
             </div>
           </div>
           <div class="faq-divider"></div>
