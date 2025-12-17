@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERV - Generate Ultrarealistic UGC Videos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="assets/Nav bar/LOGO.png" alt="VERV" class="logo-img">
+        </div>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Features <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#" class="nav-link">Use cases <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#" class="nav-link">Pricing</a>
+          <a href="#" class="nav-link">Enterprise</a>
+        </div>
+        <div class="nav-cta">
+          <a href="https://verv.fm/signup" class="btn btn-primary btn-medium">Start free trial</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Generate Ultrarealistic UGC videos</h1>
+        <p class="hero-subtitle">AI-powered authentic content that converts. Perfect for your brand's social proof.</p>
+        <a href="https://verv.fm/signup" class="btn btn-primary btn-large">
+          Start free trial
+          <svg class="btn-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Video Cards Grid -->
+      <div class="video-cards-grid">
+        <div class="video-card">
+          <video autoplay loop muted playsinline>
+            <source src="assets/frame 205401.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-header">
+            <span class="video-card-label">Selfie</span>
+            <button class="audio-btn" onclick="toggleAudio(this)">
+              <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23 9L17 15M17 9L23 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none;">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.07 5.93C19.9447 7.80528 20.9979 10.3478 20.9979 13C20.9979 15.6522 19.9447 18.1947 18.07 20.07" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-card-thumbnail">
+            <img src="assets/423ee8e766c9060297fc499253ce740e4a22c079.png" alt="Product thumbnail">
+          </div>
+        </div>
+
+        <div class="video-card">
+          <video autoplay loop muted playsinline>
+            <source src="assets/frame 205402 copy.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-header">
+            <span class="video-card-label">Try on</span>
+            <button class="audio-btn" onclick="toggleAudio(this)">
+              <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23 9L17 15M17 9L23 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none;">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.07 5.93C19.9447 7.80528 20.9979 10.3478 20.9979 13C20.9979 15.6522 19.9447 18.1947 18.07 20.07" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-card-thumbnail">
+            <img src="assets/frame 205367.png" alt="Product thumbnail">
+          </div>
+        </div>
+
+        <div class="video-card">
+          <video autoplay loop muted playsinline>
+            <source src="assets/frame 205398.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-header">
+            <span class="video-card-label">Unboxings</span>
+            <button class="audio-btn" onclick="toggleAudio(this)">
+              <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23 9L17 15M17 9L23 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none;">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.07 5.93C19.9447 7.80528 20.9979 10.3478 20.9979 13C20.9979 15.6522 19.9447 18.1947 18.07 20.07" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-card-thumbnail">
+            <img src="assets/65ea412fc55ea9fc042f26ffaf5f069eac15826d.png" alt="Product thumbnail">
+          </div>
+        </div>
+
+        <div class="video-card">
+          <img src="assets/5d32c918d1fad213bb24c68822f27698e71e6963.png" alt="Lifestyle" class="video-card-bg">
+          <div class="video-card-header">
+            <span class="video-card-label">Lifestyle</span>
+            <button class="audio-btn" onclick="toggleAudio(this)">
+              <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23 9L17 15M17 9L23 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none;">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.07 5.93C19.9447 7.80528 20.9979 10.3478 20.9979 13C20.9979 15.6522 19.9447 18.1947 18.07 20.07" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-card-thumbnail">
+            <img src="assets/fe134f2579c2c54551bdf9280517648b65ffff80.png" alt="Product thumbnail">
+          </div>
+        </div>
+
+        <div class="video-card">
+          <video autoplay loop muted playsinline>
+            <source src="assets/frame 205403.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-header">
+            <span class="video-card-label">Product demo</span>
+            <button class="audio-btn" onclick="toggleAudio(this)">
+              <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23 9L17 15M17 9L23 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none;">
+                <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.07 5.93C19.9447 7.80528 20.9979 10.3478 20.9979 13C20.9979 15.6522 19.9447 18.1947 18.07 20.07" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-card-thumbnail">
+            <img src="assets/84c3897cf7af06ff840441720aafe5ebab214997.png" alt="Product thumbnail">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+      <p class="intro-text">
+        With VERV, you can skip casting, filming, and editing entirely—instantly <em>transforming</em> ordinary product photos into narrative-driven creative that builds desire, not just awareness.
+      </p>
+    </section>
+
+    <!-- Generate UGC Section -->
+    <section class="generate-section">
+      <div class="generate-content">
+        <div class="speech-text-box">
+          <p>Speech text:</p>
+          <p class="speech-text-content">"I just grabbed this face oil and i haven't try it yet, so no verdict, just showing it. The packaging is clean and i really like the dropper."</p>
+        </div>
+        <div class="generate-visual">
+          <div class="generate-title-wrapper">
+            <h2 class="generate-title">Generate UGC videos</h2>
+            <div class="source-image">
+              <img src="assets/Rectangle 110.png" alt="Source">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="generate-video">
+        <video autoplay loop muted playsinline>
+          <source src="assets/Rectangle 109.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="generate-description">
+        <span class="white-text">Always culturally on-time. </span>
+        <span class="muted-text">Create UGC that feels "Now", not yesterday. Give your brand instant aesthetic fluency, crafted with trend-aware visual cues.</span>
+      </p>
+    </section>
+
+    <!-- Product Without Production Section -->
+    <section class="production-section">
+      <div class="production-visual">
+        <img src="assets/801d802d8f6252dd75f1865cc3a031ee4c3954f5.png" alt="Production steps" class="production-image">
+        <div class="production-label production-label-1">Casting</div>
+        <div class="production-label production-label-2">Filming</div>
+        <div class="production-label production-label-3">Editing</div>
+      </div>
+      <p class="production-description">
+        <span class="white-text">Product without production. </span>
+        <span class="muted-text">Skip casting, filming, and editing. Transform your product photos into narrative-driven UGC without production drag.</span>
+      </p>
+    </section>
+
+    <!-- Creative System Section -->
+    <section class="creative-section">
+      <div class="creative-videos">
+        <div class="creative-video">
+          <video autoplay loop muted playsinline>
+            <source src="assets/Unified 1.mp4" type="video/mp4">
+          </video>
+          <span class="creative-video-duration">0:05</span>
+        </div>
+        <div class="creative-video">
+          <video autoplay loop muted playsinline>
+            <source src="assets/Unified 2.mp4" type="video/mp4">
+          </video>
+          <span class="creative-video-duration">0:05</span>
+        </div>
+        <div class="creative-video">
+          <video autoplay loop muted playsinline>
+            <source src="assets/Unified 3.mp4" type="video/mp4">
+          </video>
+          <span class="creative-video-duration">0:05</span>
+        </div>
+      </div>
+      <p class="creative-description">
+        <span class="white-text">A unified creative system. </span>
+        <span class="muted-text">Generate multiple variations while keeping your brand's aesthetic consistent. Perfect for rapid creative testing without extra work.</span>
+      </p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+      <h2 class="how-it-works-title">How it works</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-image-container">
+            <img src="assets/a863e63de3d568ba4044d30132892a2d2eab7641.png" alt="Step 1" class="step-main-image">
+            <div class="step-thumbnails">
+              <img src="assets/Rectangle 47.png" alt="Thumbnail 1">
+              <img src="assets/Rectangle 48.png" alt="Thumbnail 2">
+              <div class="step-thumbnail-active">
+                <img src="assets/Rectangle 50.png" alt="Thumbnail 3">
+              </div>
+              <img src="assets/Rectangle 49.png" alt="Thumbnail 4">
+            </div>
+          </div>
+          <div class="step-content">
+            <div class="step-header">
+              <span class="step-number">1</span>
+              <span class="step-label">Generate UGC images</span>
+            </div>
+            <p class="step-description">Upload your product image, and choose a style direction to generate preview images.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-image-container step-speech">
+            <img src="assets/a863e63de3d568ba4044d30132892a2d2eab7641.png" alt="Step 2" class="step-main-image step-main-blurred">
+            <div class="speech-overlay">
+              <div class="speech-card">
+                <div class="speech-card-header">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 10V14M7 6V18M11 3V21M15 8V16M19 10V14" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>Speech text</span>
+                </div>
+                <div class="speech-card-content">
+                  <p>I just grabbed this face oil and i haven't try it yet, so no verdict, just showing it. The packaging is clean and i really like the dropper.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step-content">
+            <div class="step-header">
+              <span class="step-number">2</span>
+              <span class="step-label">Custom speech</span>
+            </div>
+            <p class="step-description">Describe the model, the account, and define exactly what you want them to say.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-image-container">
+            <video autoplay loop muted playsinline class="step-video">
+              <source src="assets/frame 205402 copy.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="step-content">
+            <div class="step-header">
+              <span class="step-number">3</span>
+              <span class="step-label">Turn image into video</span>
+            </div>
+            <p class="step-description">Instantly receive a polished video, ready to use anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="faq-container">
+        <div class="faq-left">
+          <div class="faq-header">
+            <h2 class="faq-title">FAQ</h2>
+            <p class="faq-description">Everything you need to know about the product and how it works. Can't find an answer? <a href="#">Chat to our team</a>.</p>
+          </div>
+        </div>
+        
+        <div class="faq-right">
+          <div class="faq-item faq-item-open">
+            <div class="faq-question">
+              <span>What is included in the free trial?</span>
+              <button class="faq-toggle faq-toggle-open">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12.5L10 7.5L15 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>You'll get 250 credits during the free trial, which covers roughly 100 images or 25 videos. The trial is active for 3 days from the moment you begin.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I start creating videos?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Start by uploading your product photo and choosing an art direction to set the visual tone. Add any prompt details you want, then generate your images. Each run gives you 4 variations, and you can turn any of them into videos or refine them further with additional prompts.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are "Art Directions"?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Art Directions are VERV's handpicked templates curated by creative directors and real humans, that apply trending, culture-driven visual styles to your product photos and videos. This is what sets VERV apart from traditional AI creation tools. With 50+ options, you can achieve editorial-grade, on-trend results in one click without the "generic AI look" or aesthetic guesswork.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How's VERV better than other traditional AI image and video creation tools?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>VERV gives Ecommerce brands the tools to create studio-quality ads and product photography with true art direction. Where other AI tools produce generic, "AI-looking" results, VERV delivers brand-consistent, art-directed visuals that look and feel real.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How are credits spent?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Generations and edits both cost 10 credits per set of 4 images. Converting any image into a video format also requires 10 credits.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is it safe to use VERV-generated creatives for commercial purposes?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely. Every creative you generate with VERV is commercially safe and ready for use immediately.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Will unused credits roll over to the next month?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>No, unused credits will not roll over.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you have an unlimited or annual plan available?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>We don't offer an unlimited or annual plan at the moment.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>When can I cancel my plan?</span>
+              <button class="faq-toggle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="faq-answer">
+              <p>You can cancel your plan at any time. Your subscription will be active until the end of the billing cycle.</p>
+            </div>
+          </div>
+          <div class="faq-divider"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-left">
+            <div class="footer-social">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p class="footer-copyright">Copyright © Verv.fm. All All rights reserved</p>
+          </div>
+          <div class="footer-right">
+            <div class="footer-column">
+              <h4>Company</h4>
+              <a href="#">Terms & conditions</a>
+              <a href="#">Privacy policy</a>
+              <a href="#">Prohibited Use Policy</a>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <span>VERV.FM</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
