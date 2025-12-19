@@ -1694,3 +1694,172 @@ body {
     height: 60px;
   }
 }
+
+/* ============================================
+   UGC FLOW ANIMATION
+   Connecting line from product to video
+   ============================================ */
+
+/* Section wrapper */
+.ugc-flow {
+  position: relative;
+}
+
+/* Source card - initial state */
+.ugc-flow__source {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.ugc-flow.is-animated .ugc-flow__source {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Connecting Path SVG */
+.ugc-flow__path {
+  display: block;
+  width: 60px;
+  height: 100px;
+  margin: 20px auto;
+  overflow: visible;
+}
+
+.ugc-flow__line {
+  fill: none;
+  stroke: var(--color-primary-100);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  transition: stroke-dashoffset 800ms ease-out;
+}
+
+.ugc-flow.is-animated .ugc-flow__line {
+  stroke-dashoffset: 0;
+}
+
+/* Downward Arrow */
+.ugc-flow__arrow {
+  fill: none;
+  stroke: var(--color-primary-100);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 400ms ease-out;
+  transition-delay: 0ms;
+}
+
+.ugc-flow.is-animated .ugc-flow__arrow {
+  stroke-dashoffset: 0;
+  transition-delay: 600ms;
+}
+
+/* Animated dot that travels along the path */
+.ugc-flow__dot {
+  fill: var(--color-primary-100);
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+}
+
+.ugc-flow.is-animated .ugc-flow__dot {
+  opacity: 1;
+  animation: dot-travel 800ms ease-out forwards;
+  animation-delay: 100ms;
+}
+
+@keyframes dot-travel {
+  0% {
+    cy: 0;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    cy: 120;
+    opacity: 0;
+  }
+}
+
+/* Result card - initial state */
+.ugc-flow__result {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+  transition-delay: 0ms;
+}
+
+.ugc-flow.is-animated .ugc-flow__result {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition-delay: 600ms;
+}
+
+/* Subtle glow effect when result activates */
+.ugc-flow.is-animated .ugc-flow__result::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: 0 0 20px rgba(239, 243, 27, 0.3);
+  opacity: 0;
+  animation: result-glow 600ms ease-out forwards;
+  animation-delay: 700ms;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes result-glow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ugc-flow__source,
+  .ugc-flow__result {
+    transition-duration: 0ms;
+    transition-delay: 0ms;
+  }
+  
+  .ugc-flow__source {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .ugc-flow__result {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .ugc-flow__line {
+    stroke-dashoffset: 0;
+    transition: none;
+  }
+  
+  .ugc-flow__dot {
+    animation: none;
+    opacity: 0;
+  }
+  
+  .ugc-flow__arrow {
+    stroke-dashoffset: 0;
+    transition: none;
+  }
+  
+  .ugc-flow.is-animated .ugc-flow__result::after {
+    animation: none;
+  }
+}

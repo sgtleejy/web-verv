@@ -169,8 +169,8 @@
       </p>
     </section>
 
-    <!-- Generate UGC Section -->
-    <section class="generate-section">
+    <!-- Generate UGC Section with Scroll Animation -->
+    <section class="generate-section ugc-flow">
       <div class="generate-content">
         <div class="speech-text-box">
           <p>Speech text:</p>
@@ -179,15 +179,24 @@
         <div class="generate-visual">
           <div class="generate-title-wrapper">
             <h2 class="generate-title">Generate UGC videos</h2>
-            <div class="source-image">
-              <img src="assets/Rectangle 110.png" alt="Source">
+            <div class="source-image ugc-flow__source">
+              <img src="assets/dress product image.png" alt="Source">
             </div>
           </div>
         </div>
 
       </div>
-      <div class="generate-video">
-        <video autoplay loop muted playsinline>
+      
+      <!-- Connecting Path SVG with Arrow -->
+      <svg class="ugc-flow__path" viewBox="0 0 100 140" preserveAspectRatio="none" aria-hidden="true">
+        <path class="ugc-flow__line" d="M50 0 L50 95" />
+        <!-- Downward Arrow - larger chevron -->
+        <path class="ugc-flow__arrow" d="M50 110 L30 80 M50 110 L70 80" />
+        <circle class="ugc-flow__dot" cx="50" cy="0" r="4" />
+      </svg>
+      
+      <div class="generate-video ugc-flow__result">
+        <video loop muted playsinline preload="metadata">
           <source src="assets/Rectangle 109.mp4" type="video/mp4">
         </video>
       </div>
@@ -537,5 +546,7 @@
   </div>
 
   <script src="../assets/js/main.js"></script>
+  <!-- UGC Flow Animation -->
+  <script src="ugc-flow.js"></script>
 </body>
 </html>
